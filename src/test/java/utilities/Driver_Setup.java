@@ -13,7 +13,7 @@ import java.time.Duration;
 import java.util.Locale;
 
 public class Driver_Setup {
-    private static String browser_name = System.getProperty("browser","chrome");
+    private static String browser_name = System.getProperty("browser","edge");
     private static final ThreadLocal<WebDriver>LOCAL_Driver= new ThreadLocal<>();
 
     public static void set_Driver(WebDriver driver){
@@ -28,14 +28,14 @@ public class Driver_Setup {
 
 
     public static WebDriver get_browser(String browser_name){
-        switch(browser_name.toLowerCase(Locale.ROOT)){
+        switch(browser_name.toLowerCase()){
             case "chrome":
-                new ChromeDriver();
+                return new ChromeDriver();
 
             case "firefox":
-                new FirefoxDriver();
+                return new FirefoxDriver();
             case "edge":
-                new EdgeDriver();
+                return new EdgeDriver();
             default:
                 throw new RuntimeException("Browser not Found! using the given browser name:" +browser_name);
         }
@@ -47,25 +47,10 @@ public class Driver_Setup {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         set_Driver(driver);
     }
-
+    @AfterSuite
     public static synchronized void quitBrowser(){
         getDriver().quit();
     }
 
-//    public WebDriver driver;
 
-//    @BeforeSuite
-//    public void setDriver(){
-////        ChromeOptions options = new ChromeOptions();
-////        options.addExtensions(new File("./Extention/Adblock.crx"));
-////        driver = new ChromeDriver(options);
-//        driver = new ChromeDriver();
-//        driver.manage().window().maximize();
-//
-//    }
-//    @AfterSuite
-//    public void closeDriver(){
-//        driver.quit();
-
-    }
 }
