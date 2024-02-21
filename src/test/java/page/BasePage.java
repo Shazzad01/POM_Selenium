@@ -1,13 +1,15 @@
 package page;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
-import org.openqa.selenium.WebElement;
+import com.github.javafaker.Faker;
+import io.qameta.allure.Allure;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import utilities.Driver_Setup;
 
+import java.io.ByteArrayInputStream;
 import java.util.List;
+import java.util.Locale;
 
 public class BasePage extends Driver_Setup {
     public WebElement getElement(By locator){
@@ -93,6 +95,35 @@ public class BasePage extends Driver_Setup {
                 break;
             }
         }
+    }
+    /****************************
+     * Faker Related Task *
+     ****************************
+     */
+
+    static Faker faker = new Faker(new Locale("en-US"));
+
+    public String emailGenerate() {
+        return faker.bothify("????##@mail.com");
+    }
+
+    public String firstNameGenerate() {
+        return faker.name().firstName();
+    }
+
+    public String lastNameGenerate() {
+        return faker.name().lastName();
+    }
+
+    public String phoneNumberGenerate() {
+        return faker.numerify("###-###-####");
+    }
+
+    public String passwordGenerate() {
+        return faker.animal().name();
+    }
+    public void takeScreenShot(String name){
+        Allure.addAttachment(name, new ByteArrayInputStream(((TakesScreenshot)(getDriver())).getScreenshotAs(OutputType.BYTES)));
     }
 
 }
