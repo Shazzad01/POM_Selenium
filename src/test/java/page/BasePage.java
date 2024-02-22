@@ -115,6 +115,8 @@ public class BasePage extends Driver_Setup {
         return faker.name().lastName();
     }
 
+    public String zipCodeGenerate(){return faker.address().zipCode();}
+
     public String phoneNumberGenerate() {
         return faker.numerify("###-###-####");
     }
