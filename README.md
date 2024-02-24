@@ -9,15 +9,9 @@
 
 ## Report Summary:
 
-[data_suites.csv](https://github.com/Shazzad01/POM_Selenium/files/14371775/data_suites.csv)"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Feb 22 14:51:22 BDT 2024","Thu Feb 22 14:51:23 BDT 2024","618","All Test Suite","C:/Users/User/IdeaProjects/POM_Selenium","testcases.TC02ProductTest","testcases.TC02ProductTest","addToCartProduct","addToCartProduct",""
-"passed","Thu Feb 22 14:51:23 BDT 2024","Thu Feb 22 14:51:25 BDT 2024","2078","All Test Suite","C:/Users/User/IdeaProjects/POM_Selenium","testcases.TC04CheckOutTest","testcases.TC04CheckOutTest","clickContinueButton","clickContinueButton",""
-"passed","Thu Feb 22 14:51:21 BDT 2024","Thu Feb 22 14:51:22 BDT 2024","703","All Test Suite","C:/Users/User/IdeaProjects/POM_Selenium","testcases.TC01LoginTest","testcases.TC01LoginTest","testLoginWithValidCredentials","testLoginWithValidCredentials",""
-"passed","Thu Feb 22 14:51:19 BDT 2024","Thu Feb 22 14:51:20 BDT 2024","1104","All Test Suite","C:/Users/User/IdeaProjects/POM_Selenium","testcases.TC01LoginTest","testcases.TC01LoginTest","testLoginWithinValidCredentials","testLoginWithinValidCredentials",""
-"passed","Thu Feb 22 14:51:17 BDT 2024","Thu Feb 22 14:51:19 BDT 2024","1708","All Test Suite","C:/Users/User/IdeaProjects/POM_Selenium","testcases.TC01LoginTest","testcases.TC01LoginTest","testLoginWithInvalidTest","testLoginWithInvalidTest",""
-"passed","Thu Feb 22 14:51:20 BDT 2024","Thu Feb 22 14:51:21 BDT 2024","784","All Test Suite","C:/Users/User/IdeaProjects/POM_Selenium","testcases.TC01LoginTest","testcases.TC01LoginTest","testLoginWithemptyUserName","testLoginWithemptyUserName",""
-"passed","Thu Feb 22 14:51:23 BDT 2024","Thu Feb 22 14:51:23 BDT 2024","324","All Test Suite","C:/Users/User/IdeaProjects/POM_Selenium","testcases.TC03CartTest","testcases.TC03CartTest","clickCheakOutButton","clickCheakOutButton",""
-"passed","Thu Feb 22 14:51:21 BDT 2024","Thu Feb 22 14:51:21 BDT 2024","786","All Test Suite","C:/Users/User/IdeaProjects/POM_Selenium","testcases.TC01LoginTest","testcases.TC01LoginTest","testLoginWithemptyPassword","testLoginWithemptyPassword",""
+[data_suites.csv](https://github.com/Shazzad01/POM_Selenium/files/14371775/data_suites.csv)
+
+[TestNG Report.pdf](https://github.com/Shazzad01/POM_Selenium/files/14392248/TestNG.Report.pdf)
 
 
 
